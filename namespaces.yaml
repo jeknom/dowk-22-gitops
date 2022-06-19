@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: prometheus
+  labels:
+    name: prometheus
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dowk-22-todo
+  labels:
+    name: dowk-22-todo
