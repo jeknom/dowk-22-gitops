@@ -3,7 +3,7 @@ name: Release 4-gitops-app
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
