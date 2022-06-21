@@ -52,9 +52,12 @@ jobs:
     - name: Set up Kustomize
       uses: imranismail/setup-kustomize@v1
 
+    - name: Clone app
+      run: git clone https://github.com/jeknom/dev-ops-with-kubernetes-2022.git
+
     # Update configs
     - name: Update yamls
-      working-directory: manifests
+      working-directory: ./dev-ops-with-kubernetes-2022/part4/4-08-project-v2.1
       run: |-
         kustomize edit set image CLIENT_IMAGE=jeknom/dowk-22-todo-client:${{ github.sha }}
         kustomize edit set image SERVER_IMAGE=jeknom/dowk-22-todo-server:${{ github.sha }}
