@@ -52,7 +52,7 @@ jobs:
     - name: Set up Kustomize
       uses: imranismail/setup-kustomize@v1
 
-    # Update yamls
+    # Update configs
     - name: Update yamls
       working-directory: manifests
       run: |-
