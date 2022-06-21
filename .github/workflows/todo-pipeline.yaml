@@ -18,7 +18,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Clone app
-      run: -|
+      run: |
         git clone https://github.com/jeknom/dev-ops-with-kubernetes-2022.git
         mv dev-ops-with-kubernetes-2022/part4/4-08-project-v2.1 /app
     - name: Build and Push Client
