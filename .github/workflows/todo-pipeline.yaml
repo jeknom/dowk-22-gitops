@@ -63,7 +63,7 @@ jobs:
     # Commit and push
     - uses: EndBug/add-and-commit@v7
       with:
-        add: '/manifests/kustomization.yaml'
+        add: './dev-ops-with-kubernetes-2022/part4/4-08-project-v2.1/kustomization.yaml'
         message: New version release for gitops-app ${{ github.sha }}
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
